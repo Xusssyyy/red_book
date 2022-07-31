@@ -1,0 +1,16 @@
+{
+  "id": "3556727",
+  "name": "delete",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2742653",
+      "name": "删除",
+      "font_class": "shanchu",
+      "unicode": "e674",
+      "unicode_decimal": 58996
+    }
+  ]
+}

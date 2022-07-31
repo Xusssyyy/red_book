@@ -1,0 +1,2 @@
+export const CHANGE_SEARCH = 'CHANGE_SEARCH'
+export const ENTER_LOADING = 'ENTER_LOADING'

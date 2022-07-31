@@ -1,0 +1,2 @@
+export const CHANGE_List = 'CHANGE_List'
+export const CHANGE_ENTER_LOADING_THREE = 'CHANGE_ENTER_LOADING_THREE'

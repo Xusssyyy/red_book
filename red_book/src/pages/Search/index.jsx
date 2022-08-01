@@ -30,7 +30,7 @@ const Search = (props) =>{
         <div className="container">
         {
           search.filter(item => 
-            item.title.indexOf(query) != -1
+            item.title.indexOf(query) != -1||item.content.indexOf(query)!=-1
           ).map(item => {
             return (
               <ListSearch key={item.id} things={item} />
@@ -60,7 +60,7 @@ return (
           <GoodsWrapper show={query}>
             {
               search.filter(
-                item => item.title.indexOf(query) != -1
+                item => item.title.indexOf(query) != -1||item.content.indexOf(query)!=-1
               ).length > 0
               ?
                 renderGoodsList()

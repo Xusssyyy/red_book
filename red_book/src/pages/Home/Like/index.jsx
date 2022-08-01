@@ -17,17 +17,17 @@ import { sleep } from 'antd-mobile/es/utils/sleep'
   }, [])
    async function doRefresh() {
     await sleep(1000);
-    getListtDispatch();
+    // getListDispatch();
   }
     return(
+      <Scroll onScroll={forceCheck}>
+      <ListWrapper>
       <PullToRefresh
       onRefresh={doRefresh}
       canReleaseText={<h4>用力拉</h4>}
       completeText={ <h4>好啦</h4>}
       refreshingText={<h4>玩命加载中</h4>}
       >
-      <Scroll onScroll={forceCheck}>
-      <ListWrapper>
         <div className="container">
           {like.map(item=>(
               <ListThree source={item} key={item.id}/>
@@ -35,9 +35,10 @@ import { sleep } from 'antd-mobile/es/utils/sleep'
           } 
         </div>
         {enterLoading && <SpinLoading style={{'--color':'#ed2b43'}} className='load'/>}
+        </PullToRefresh>
       </ListWrapper>
      </Scroll>
-     </PullToRefresh>
+   
     )
  }
  
